@@ -1,0 +1,91 @@
+/*css reset*/
+/*===================*/
+body{
+    margin:0;padding: 0;
+}
+dl,dt,dd{
+    margin:0;padding:0;
+}
+a{
+    text-decoration: none;
+    color: #090202;
+}
+
+/*end*/
+/*===================*/
+
+
+/*正文*/
+.block{
+    height: 600px;
+    margin-bottom: 15px;
+}
+#block1{
+    background: #EEA0A0;
+}
+#block2{
+    background: #84DD9D;
+}
+#block3{
+    background: #84DDDC;
+}
+#block4{
+    background: #E9E562;
+}
+#block5{
+    background: #EABA7C;
+}
+#block6{
+    background: #8F94E2;
+}
+#block7{
+    background: #D47EC9;
+}
+#block8{
+    background: #9CD8A2;
+}
+#block9{
+    background: #D46481;
+}
+/*导航条*/
+#suspendNav{
+    width:200px;
+    height: 380px;
+    position: absolute;
+    left: 50%;
+    background: #fff;
+    top:150px;
+    margin-left: 450px;
+    border-radius: 4px;
+    overflow: auto;
+    padding-left: 40px;
+    font-size: 14px;
+}
+.suapendNavMain{
+    padding:35px 0;
+    line-height: 20px;
+    font-family: "微软雅黑";
+
+}
+.suapendNavMain dd{
+    position: relative;
+    cursor: pointer;
+    padding:0 0 29px 20px;
+    border-left:1px solid #c1c1c1;
+}
+.suapendNavMain dd:before{
+    position: absolute;
+    left: -12px;
+    top:-0px;
+    display: block;
+    content: "";
+    width:10px;
+    height: 10px;
+    background-color:#c1c1c1; 
+    border-radius: 50%;
+    border:6px solid #fff;
+
+}
+.suapendNavMain .active:before{
+    background-color: #f90;
+}
