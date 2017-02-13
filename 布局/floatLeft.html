@@ -4,24 +4,29 @@
 <meta charset="utf-8">
 <title>左右布局</title>
   <style>
+    body{
+        padding:0;
+        margin:0;
+        color: #fff;
+    }
     .demo-content{
-      width:1200px;
-      position: relative;
-      overflow: hidden;
+        width:100%;
+        position: relative;
+        overflow: hidden;
     }
     .a{
-      float: left;
-      width:240px;
-      height: 500px;
-      background-color: #f00;
+        float: left;
+        width:240px;
+        height: 500px;
+        background-color: #f00;
     }
     .b{
-      position: relative;
-      background: #00f;
-      height: 600px;
-      left: 0px;
-      /*加了overflow:hidden以后，红色区域才能显示*/
-      overflow: auto;
+        position: relative;
+        background: #00f;
+        height: 900px;
+        left: 0px;
+        /*加了overflow:hidden以后，红色区域才能显示*/
+        overflow: auto;
     }
   </style>
 </head>

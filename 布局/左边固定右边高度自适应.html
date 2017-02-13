@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>左边固定右边高度自适应</title>
+  <style>
+    body{
+        margin:0;
+        padding:0;
+    }
+    .demo-content{
+        color: #fff;
+    }
+    .a{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width:240px;
+        background-color: #f00;
+    }
+    .b{
+        position: absolute;
+        background: #00f;
+        left: 240px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow-y:auto;
+    }
+    .content{
+        /*内容较少*/
+        /*height: 600px;*/
+        /*内容较多*/
+        height: 2000px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-content">
+    <div class="a">左边固定块</div>
+    <div class="b">
+        <div class="content">
+            右边内容区
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+            <div>这是内容</div>
+        </div>
+    </div>
+  </div>
+<script src="http://g.tbcdn.cn/fi/bui/jquery-1.8.1.min.js"></script>
+ 
+<!-- script start --> 
+<script type="text/javascript">
+      
+</script>
+<!-- script end -->
+</body>
+</html>
