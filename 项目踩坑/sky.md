@@ -14,4 +14,6 @@ this.$set(items,index,newValue);
 
 [1]: https://jsfiddle.net/0y7bsth4/7/
 
+子组件也可以通过`this.$parent.xxFun();`调用父组件的方法
+
 3.computed
