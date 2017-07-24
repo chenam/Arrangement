@@ -68,7 +68,9 @@ div {
 ```
 
 5. 多行，每行高度自动撑开，并向上排列,类似百度的
+
 ![百度截图](images/baidu.png)
+
 
 ```
 display:inline-block;vertical-align:top;
