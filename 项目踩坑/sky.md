@@ -81,3 +81,22 @@ div {
 ```
 display:inline-block;vertical-align:top;
 ```
+- iframe下载文件
+
+```
+iframeDownLoad : function(url){
+    let _this = this;
+    let name = 'J_iframe' + (+ new Date());
+    let iframe = $(`<iframe name="${name}" src="${url}" class="J_iframe hide" width="0" height="0"></iframe>`);
+    iframe.on('load',function(){
+        let body = window.frames[name].document;
+    let html = body.body.innerHTML;
+    // 解决如果成功下载文件流 iframe会重定向到error页面 从而读取error页面的innrHTML , 通过---------- 判断是否后台给入的参数
+    if(html.indexOf('----------') !== -1){
+        let message = html.split('----------')[1];
+        _this.$message.error(message);
+    }
+    });
+    $('body').append(iframe);
+}
+```
