@@ -8,7 +8,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color='#cfdbde',Direction=180,St
 box-shadow:0 0 10px #cfdbde;
 ```  
 #### 方法二  
-引用PIE.htc  
+引用`PIE.htc`  
 下载地址：[http://css3pie.com/download/](http://css3pie.com/download/)  
 提示：PIE.htc URL路径是相对于当前HTML文件，不是CSS文件,比如 当前文件在“/”下 ，CSS文件在“/CSS”下，`PIE.htc`在“/CSS”下，`behavior: url(/css/PIE.htc)` 而不是`behavior: url(PIE.htc)`
 ```
